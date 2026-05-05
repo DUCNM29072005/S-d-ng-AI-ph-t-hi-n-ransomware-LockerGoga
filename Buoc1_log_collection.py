@@ -12,7 +12,7 @@ except Exception:
 warnings.filterwarnings("ignore", category=UserWarning)
 
 
-LOG_DIR = Path(r"C:\AI\LogExport")
+LOG_DIR = Path(r"LogExport")
 
 
 def export_windows_logs():
@@ -210,8 +210,8 @@ def collect_logs(log_folder, output_file):
 
 if __name__ == "__main__":
     exit_code = collect_logs(
-        log_folder=r"C:\AI\LogExport",
-        output_file=r"C:\AI\LogExport\raw_logs.csv"
+        log_folder=r"LogExport",
+        output_file=r"raw_logs.csv"
     )
 
     sys.exit(exit_code)
