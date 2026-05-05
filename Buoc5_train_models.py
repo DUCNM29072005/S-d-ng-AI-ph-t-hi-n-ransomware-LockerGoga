@@ -309,6 +309,6 @@ def train_pipeline(input_file, output_folder):
 
 if __name__ == "__main__":
     train_pipeline(
-        input_file=r"C:\AI\LogExport\training_dataset.csv",
-        output_folder=r"C:\AI\LogExport\ModelOutput"
+        input_file=r"LogExport\training_dataset.csv",
+        output_folder=r"LogExport\ModelOutput"
     )
