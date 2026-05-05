@@ -48,6 +48,6 @@ def summarize_results(input_file, output_file):
 
 if __name__ == "__main__":
     summarize_results(
-        input_file=r"C:\AI\LogExport\ModelOutput\new_detection_results.csv",
-        output_file=r"C:\AI\LogExport\ModelOutput\summary_results.csv"
+        input_file=r"LogExport\ModelOutput\new_detection_results.csv",
+        output_file=r"LogExport\ModelOutput\summary_results.csv"
     )
