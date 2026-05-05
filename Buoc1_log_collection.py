@@ -211,7 +211,7 @@ def collect_logs(log_folder, output_file):
 if __name__ == "__main__":
     exit_code = collect_logs(
         log_folder=r"LogExport",
-        output_file=r"raw_logs.csv"
+        output_file=r"LogExport\raw_logs.csv"
     )
 
     sys.exit(exit_code)
