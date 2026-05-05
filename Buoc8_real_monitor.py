@@ -6,12 +6,12 @@ from pathlib import Path
 
 PYTHON_EXE = "python"
 
-BASE_DIR = Path(r"C:\AI\src")
+BASE_DIR = Path(r"src")
 
-COLLECT_SCRIPT = BASE_DIR / "log_collection.py"
-PREPROCESS_SCRIPT = BASE_DIR / "preprocess_data.py"
-EXTRACT_SCRIPT = BASE_DIR / "extract_features.py"
-DETECT_SCRIPT = BASE_DIR / "detect_new_sample.py"
+COLLECT_SCRIPT = BASE_DIR / "Buoc1_log_collection.py"
+PREPROCESS_SCRIPT = BASE_DIR / "Buoc2_preprocess_data.py"
+EXTRACT_SCRIPT = BASE_DIR / "Buoc3_extract_features.py"
+DETECT_SCRIPT = BASE_DIR / "Buoc6_detect_new_sample.py"
 
 MONITOR_INTERVAL = 60  # số giây giữa mỗi lần quét
 
