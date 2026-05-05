@@ -274,6 +274,6 @@ def preprocess_logs(input_file, output_file):
 
 if __name__ == "__main__":
     preprocess_logs(
-        input_file=r"raw_logs.csv",
-        output_file=r"preprocessed_logs.csv"
+        input_file=r"LogExport\raw_logs.csv",
+        output_file=r"LogExport\preprocessed_logs.csv"
     )
