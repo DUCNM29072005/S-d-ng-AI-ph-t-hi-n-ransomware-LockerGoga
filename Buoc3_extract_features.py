@@ -76,7 +76,7 @@ def prepare_base_columns(df):
     return df
 
 
-def load_simulation_events(sim_file=r"C:\AI\LogExport\simulation_events.csv"):
+def load_simulation_events(sim_file=r"LogExport\simulation_events.csv"):
     """
     Đọc log mô phỏng nếu có.
     File này được tạo bởi simulate_lockergoga_like.ps1.
@@ -591,6 +591,6 @@ def extract_features(input_file, output_file):
 
 if __name__ == "__main__":
     extract_features(
-        input_file=r"C:\AI\LogExport\preprocessed_logs.csv",
-        output_file=r"C:\AI\LogExport\features_dataset.csv"
+        input_file=r"LogExport\preprocessed_logs.csv",
+        output_file=r"LogExport\features_dataset.csv"
     )
