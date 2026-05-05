@@ -3,7 +3,7 @@ import random
 from pathlib import Path
 
 
-OUTPUT_FILE = r"C:\AI\LogExport\training_dataset.csv"
+OUTPUT_FILE = r"LogExport\training_dataset.csv"
 
 
 def generate_benign_samples(n=300):
@@ -58,11 +58,11 @@ def generate_lockergoga_samples(n=300):
     samples = []
 
     ransomware_processes = [
-        r"c:\users\tienh\appdata\local\temp\security_update.exe",
-        r"c:\users\tienh\downloads\update_service.exe",
-        r"c:\users\public\locker_sim.exe",
-        r"c:\windows\temp\temp_runner.exe",
-        r"c:\programdata\service_update.exe"
+        r"temp\security_update.exe",
+        r"downloads\update_service.exe",
+        r"public\locker_sim.exe",
+        r"temp\temp_runner.exe",
+        r"programdata\service_update.exe"
     ]
 
     for i in range(n):
@@ -114,7 +114,7 @@ def generate_edge_cases(n=100):
             })
 
         elif case_type == "zip":
-            process = r"c:\program files\7-zip\7z.exe"
+            process = r"program files\7-zip\7z.exe"
             samples.append({
                 "time_window": f"edge_zip_{i}",
                 "process_group": process,
@@ -131,7 +131,7 @@ def generate_edge_cases(n=100):
             })
 
         else:
-            process = r"c:\users\tienh\appdata\local\temp\normal_installer.exe"
+            process = r"temp\normal_installer.exe"
             samples.append({
                 "time_window": f"edge_appdata_{i}",
                 "process_group": process,
