@@ -145,7 +145,7 @@ def recommend_action(alert_level):
     else:
         return "Không xác định"
 
-def quarantine_file(file_path, quarantine_dir=r"C:\AI\Quarantine"):
+def quarantine_file(file_path, quarantine_dir=r"Quarantine"):
     """
     Đưa file nghi ngờ vào thư mục quarantine.
     Không xóa file, chỉ di chuyển và đổi tên để tránh chạy lại.
@@ -392,8 +392,8 @@ def print_alerts(results):
 
 if __name__ == "__main__":
     exit_code = detect_samples(
-        input_file=r"C:\AI\LogExport\features_dataset.csv",
-        model_folder=r"C:\AI\LogExport\ModelOutput",
-        output_file=r"C:\AI\LogExport\ModelOutput\new_detection_results.csv"
+        input_file=r"LogExport\features_dataset.csv",
+        model_folder=r"LogExport\ModelOutput",
+        output_file=r"LogExport\ModelOutput\new_detection_results.csv"
     )
     sys.exit(exit_code)
